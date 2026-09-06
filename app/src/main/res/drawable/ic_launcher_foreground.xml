@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <defs>
+        <radialGradient
+            android:id="cosmicGlow"
+            android:cx="50%"
+            android:cy="50%"
+            android:r="50%">
+            <stop android:offset="0%" android:color="#00D4FF" />
+            <stop android:offset="50%" android:color="#6A00FF" />
+            <stop android:offset="100%" android:color="#0A0E27" />
+        </radialGradient>
+    </defs>
+
+    <!-- Deep black background -->
+    <path
+        android:fillColor="#0A0E27"
+        android:pathData="M0,0h512v512h-512z" />
+
+    <!-- Subtle cosmic stars -->
+    <circle
+        android:cx="80"
+        android:cy="100"
+        android:r="1.5"
+        android:fillColor="#00D4FF"
+        android:alpha="0.3" />
+    <circle
+        android:cx="450"
+        android:cy="120"
+        android:r="1"
+        android:fillColor="#6A00FF"
+        android:alpha="0.3" />
+    <circle
+        android:cx="100"
+        android:cy="420"
+        android:r="1.2"
+        android:fillColor="#00D4FF"
+        android:alpha="0.25" />
+    <circle
+        android:cx="430"
+        android:cy="400"
+        android:r="1.5"
+        android:fillColor="#6A00FF"
+        android:alpha="0.3" />
+
+    <!-- Outer glow aura -->
+    <circle
+        android:cx="256"
+        android:cy="256"
+        android:r="180"
+        android:fillColor="#6A00FF"
+        android:alpha="0.15" />
+
+    <!-- Mid glow layer -->
+    <circle
+        android:cx="256"
+        android:cy="256"
+        android:r="150"
+        android:fillColor="#00D4FF"
+        android:alpha="0.1" />
+
+    <!-- Audio waveform sphere - Top waves -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M 256,180 Q 280,175 300,185 Q 320,195 320,210 L 320,210 Q 300,200 280,200 Q 256,200 256,200"
+        android:alpha="0.9" />
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M 256,170 Q 290,160 330,175 Q 360,190 360,220 L 360,220 Q 330,200 290,185 Q 256,175 256,175"
+        android:alpha="0.7" />
+
+    <!-- Audio waveform sphere - Upper middle waves -->
+    <path
+        android:fillColor="#6A00FF"
+        android:pathData="M 200,210 Q 220,200 240,205 Q 256,210 280,205 Q 300,200 320,210"
+        android:strokeWidth="2.5"
+        android:strokeColor="#6A00FF"
+        android:fill="#00000000"
+        android:alpha="0.85" />
+    <path
+        android:fillColor="#6A00FF"
+        android:pathData="M 160,240 Q 190,225 230,235 Q 256,242 280,235 Q 310,225 340,240"
+        android:strokeWidth="2.5"
+        android:strokeColor="#00D4FF"
+        android:fill="#00000000"
+        android:alpha="0.8" />
+
+    <!-- Central glowing sphere core -->
+    <circle
+        android:cx="256"
+        android:cy="256"
+        android:r="95"
+        android:fillColor="#00D4FF"
+        android:alpha="0.2" />
+
+    <!-- Inner sphere with gradient -->
+    <circle
+        android:cx="256"
+        android:cy="256"
+        android:r="85"
+        android:fillColor="#6A00FF"
+        android:alpha="0.15" />
+
+    <!-- Audio waveform sphere - Lower middle waves -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M 180,270 Q 210,260 240,268 Q 256,273 280,268 Q 310,260 340,270"
+        android:strokeWidth="2.5"
+        android:strokeColor="#00D4FF"
+        android:fill="#00000000"
+        android:alpha="0.8" />
+    <path
+        android:fillColor="#6A00FF"
+        android:pathData="M 150,300 Q 190,285 230,298 Q 256,308 280,298 Q 310,285 360,300"
+        android:strokeWidth="2.5"
+        android:strokeColor="#6A00FF"
+        android:fill="#00000000"
+        android:alpha="0.75" />
+
+    <!-- Audio waveform sphere - Lower waves -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M 200,320 Q 225,310 250,318 Q 256,320 280,318 Q 300,310 320,320"
+        android:strokeWidth="2"
+        android:strokeColor="#00D4FF"
+        android:fill="#00000000"
+        android:alpha="0.7" />
+    <path
+        android:fillColor="#6A00FF"
+        android:pathData="M 160,345 Q 200,330 240,342 Q 256,348 280,342 Q 310,330 350,345"
+        android:strokeWidth="2"
+        android:strokeColor="#6A00FF"
+        android:fill="#00000000"
+        android:alpha="0.65" />
+
+    <!-- Audio waveform sphere - Bottom waves -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M 220,360 Q 235,355 250,360 Q 256,362 280,360 Q 295,355 320,360"
+        android:strokeWidth="2"
+        android:strokeColor="#00D4FF"
+        android:fill="#00000000"
+        android:alpha="0.6" />
+    <path
+        android:fillColor="#6A00FF"
+        android:pathData="M 200,375 Q 225,370 250,375 Q 256,377 280,375 Q 300,370 325,375"
+        android:strokeWidth="1.8"
+        android:strokeColor="#6A00FF"
+        android:fill="#00000000"
+        android:alpha="0.55" />
+
+    <!-- Brightest inner pulse -->
+    <circle
+        android:cx="256"
+        android:cy="256"
+        android:r="45"
+        android:fillColor="#00D4FF"
+        android:alpha="0.25" />
+
+    <!-- Ultra bright center dot -->
+    <circle
+        android:cx="256"
+        android:cy="256"
+        android:r="20"
+        android:fillColor="#00D4FF"
+        android:alpha="0.4" />
+
+    <!-- Vertical waveform accent lines through center -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M 256,160 L 256,352"
+        android:strokeWidth="1.5"
+        android:strokeColor="#00D4FF"
+        android:alpha="0.3" />
+
+    <!-- Horizontal waveform accent lines -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M 160,256 L 352,256"
+        android:strokeWidth="1.5"
+        android:strokeColor="#6A00FF"
+        android:alpha="0.25" />
+
+    <!-- Top highlight -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M 220,180 Q 256,175 292,180 Q 310,182 320,190"
+        android:strokeWidth="2.5"
+        android:strokeColor="#00D4FF"
+        android:fill="#00000000"
+        android:alpha="0.9" />
+
+    <!-- Bottom highlight -->
+    <path
+        android:fillColor="#6A00FF"
+        android:pathData="M 220,330 Q 256,335 292,330 Q 310,328 320,320"
+        android:strokeWidth="2.5"
+        android:strokeColor="#6A00FF"
+        android:fill="#00000000"
+        android:alpha="0.8" />
+
+</vector>
