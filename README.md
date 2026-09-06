@@ -49,8 +49,8 @@ app/src/main/kotlin/com/wrld/musicplayer/
 
 ### Prerequisites
 - Android Studio Arctic Fox or later
-- JDK 11 or higher
-- Android SDK 24 (API level 24) or higher
+- JDK 17 or higher
+- Android SDK 26 (API level 26) or higher
 
 ### Building
 
