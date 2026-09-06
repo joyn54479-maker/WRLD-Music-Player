@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Theme.WrldMusicPlayer" parent="Theme.Material3.Light">
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryContainer">@color/purple_200</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryContainer">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <item name="colorTertiary">@color/purple_500</item>
-        <item name="colorTertiaryContainer">@color/purple_200</item>
-        <item name="colorOnTertiary">@color/white</item>
-        <item name="colorError">@color/red_200</item>
-        <item name="colorErrorContainer">@color/red_200</item>
-        <item name="colorOnError">@color/white</item>
-        <item name="android:colorBackground">@color/white</item>
-        <item name="colorOnBackground">@color/black</item>
-        <item name="colorSurface">@color/white</item>
-        <item name="colorOnSurface">@color/black</item>
-        <item name="colorOutline">@color/purple_500</item>
+        <item name="colorPrimary">@color/md3_primary_light</item>
+        <item name="colorOnPrimary">@color/md3_on_primary_light</item>
+        <item name="colorPrimaryContainer">@color/md3_primary_container_light</item>
+        <item name="colorOnPrimaryContainer">@color/md3_on_primary_container_light</item>
+        <item name="colorSecondary">@color/md3_secondary_light</item>
+        <item name="colorOnSecondary">@color/md3_on_secondary_light</item>
+        <item name="colorSecondaryContainer">@color/md3_secondary_container_light</item>
+        <item name="colorOnSecondaryContainer">@color/md3_on_secondary_container_light</item>
+        <item name="colorTertiary">@color/md3_tertiary_light</item>
+        <item name="colorOnTertiary">@color/md3_on_tertiary_light</item>
+        <item name="colorTertiaryContainer">@color/md3_tertiary_container_light</item>
+        <item name="colorOnTertiaryContainer">@color/md3_on_tertiary_container_light</item>
+        <item name="colorError">@color/md3_error_light</item>
+        <item name="colorOnError">@color/md3_on_error_light</item>
+        <item name="colorErrorContainer">@color/md3_error_container_light</item>
+        <item name="colorOnErrorContainer">@color/md3_on_error_container_light</item>
+        <item name="android:colorBackground">@color/md3_background_light</item>
+        <item name="colorOnBackground">@color/md3_on_background_light</item>
+        <item name="colorSurface">@color/md3_surface_light</item>
+        <item name="colorOnSurface">@color/md3_on_surface_light</item>
+        <item name="colorOutline">@color/md3_outline_light</item>
     </style>
 </resources>
