@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define Material 3 attributes for compatibility -->
+    <attr name="colorPrimaryVariant" format="color" />
+    <attr name="colorSecondaryVariant" format="color" />
+    <attr name="colorSurfaceVariant" format="color" />
+    <attr name="colorOnPrimaryVariant" format="color" />
+    <attr name="colorOnSecondaryVariant" format="color" />
+</resources>
