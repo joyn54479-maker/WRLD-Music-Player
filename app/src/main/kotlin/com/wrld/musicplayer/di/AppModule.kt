@@ -1,10 +1,13 @@
 package com.wrld.musicplayer.di
 
 import android.content.Context
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.preferencesDataStore
 import androidx.media3.exoplayer.ExoPlayer
-import androidx.room.Room
-import com.wrld.musicplayer.database.WrldDatabase
-import com.wrld.musicplayer.database.dao.*
+import com.wrld.musicplayer.database.WrldMusicDatabase
+import com.wrld.musicplayer.data.repository.PlaylistRepository
+import com.wrld.musicplayer.data.repository.SongRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,56 +15,44 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
+val Context.preferencesDataStore: DataStore<Preferences> by preferencesDataStore(
+    name = "wrld_preferences"
+)
+
 @Module
 @InstallIn(SingletonComponent::class)
-object DatabaseModule {
-    @Singleton
+object AppModule {
+
     @Provides
-    fun provideWrldDatabase(
-        @ApplicationContext context: Context
-    ): WrldDatabase {
-        return Room.databaseBuilder(
-            context,
-            WrldDatabase::class.java,
-            "wrld_database"
-        ).build()
+    @Singleton
+    fun provideDatabase(@ApplicationContext context: Context): WrldMusicDatabase {
+        return WrldMusicDatabase.getInstance(context)
     }
 
-    @Singleton
     @Provides
-    fun provideSongDao(database: WrldDatabase): SongDao = database.songDao()
+    @Singleton
+    fun provideSongRepository(database: WrldMusicDatabase): SongRepository {
+        return SongRepository(database.songDao())
+    }
 
-    @Singleton
     @Provides
-    fun providePlaylistDao(database: WrldDatabase): PlaylistDao = database.playlistDao()
+    @Singleton
+    fun providePlaylistRepository(database: WrldMusicDatabase): PlaylistRepository {
+        return PlaylistRepository(
+            database.playlistDao(),
+            database.playlistSongDao()
+        )
+    }
 
-    @Singleton
     @Provides
-    fun provideAlbumDao(database: WrldDatabase): AlbumDao = database.albumDao()
+    @Singleton
+    fun provideExoPlayer(@ApplicationContext context: Context): ExoPlayer {
+        return ExoPlayer.Builder(context).build()
+    }
 
-    @Singleton
     @Provides
-    fun provideArtistDao(database: WrldDatabase): ArtistDao = database.artistDao()
-
     @Singleton
-    @Provides
-    fun provideGenreDao(database: WrldDatabase): GenreDao = database.genreDao()
-
-    @Singleton
-    @Provides
-    fun provideFolderDao(database: WrldDatabase): FolderDao = database.folderDao()
-
-    @Singleton
-    @Provides
-    fun provideQueueDao(database: WrldDatabase): QueueDao = database.queueDao()
-}
-
-@Module
-@InstallIn(SingletonComponent::class)
-object MediaPlayerModule {
-    @Singleton
-    @Provides
-    fun provideExoPlayer(
-        @ApplicationContext context: Context
-    ): ExoPlayer = ExoPlayer.Builder(context).build()
+    fun provideDataStore(@ApplicationContext context: Context): DataStore<Preferences> {
+        return context.preferencesDataStore
+    }
 }
