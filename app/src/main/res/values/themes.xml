@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.WrldMusicPlayer" parent="android:Theme.Material3.Light">
-        <item name="android:colorPrimary">@color/purple_500</item>
-        <item name="android:colorPrimaryContainer">@color/purple_200</item>
-        <item name="android:colorOnPrimary">@color/white</item>
-        <item name="android:colorSecondary">@color/teal_200</item>
-        <item name="android:colorSecondaryContainer">@color/teal_200</item>
-        <item name="android:colorOnSecondary">@color/black</item>
-        <item name="android:colorTertiary">@color/purple_500</item>
-        <item name="android:colorTertiaryContainer">@color/purple_200</item>
-        <item name="android:colorOnTertiary">@color/white</item>
-        <item name="android:colorError">@color/red_200</item>
-        <item name="android:colorErrorContainer">@color/red_200</item>
-        <item name="android:colorOnError">@color/white</item>
+    <style name="Theme.WrldMusicPlayer" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryContainer">@color/purple_200</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryContainer">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorTertiary">@color/purple_500</item>
+        <item name="colorTertiaryContainer">@color/purple_200</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorError">@color/red_200</item>
+        <item name="colorErrorContainer">@color/red_200</item>
+        <item name="colorOnError">@color/white</item>
         <item name="android:colorBackground">@color/white</item>
-        <item name="android:colorOnBackground">@color/black</item>
-        <item name="android:colorSurface">@color/white</item>
-        <item name="android:colorOnSurface">@color/black</item>
-        <item name="android:colorOutline">@color/purple_500</item>
+        <item name="colorOnBackground">@color/black</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOutline">@color/purple_500</item>
     </style>
 </resources>
