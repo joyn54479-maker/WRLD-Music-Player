@@ -8,4 +8,50 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red_200">#FFCF6679</color>
+    
+    <!-- Material 3 Light Theme Colors -->
+    <color name="md3_primary_light">#FF6200EE</color>
+    <color name="md3_on_primary_light">#FFFFFFFF</color>
+    <color name="md3_primary_container_light">#FFBB86FC</color>
+    <color name="md3_on_primary_container_light">#FF3700B3</color>
+    <color name="md3_secondary_light">#FF03DAC5</color>
+    <color name="md3_on_secondary_light">#FF000000</color>
+    <color name="md3_secondary_container_light">#FF03DAC5</color>
+    <color name="md3_on_secondary_container_light">#FF000000</color>
+    <color name="md3_tertiary_light">#FF6200EE</color>
+    <color name="md3_on_tertiary_light">#FFFFFFFF</color>
+    <color name="md3_tertiary_container_light">#FFBB86FC</color>
+    <color name="md3_on_tertiary_container_light">#FF3700B3</color>
+    <color name="md3_error_light">#FFCF6679</color>
+    <color name="md3_on_error_light">#FFFFFFFF</color>
+    <color name="md3_error_container_light">#FFCF6679</color>
+    <color name="md3_on_error_container_light">#FFFFFFFF</color>
+    <color name="md3_background_light">#FFFFFFFF</color>
+    <color name="md3_on_background_light">#FF000000</color>
+    <color name="md3_surface_light">#FFFFFFFF</color>
+    <color name="md3_on_surface_light">#FF000000</color>
+    <color name="md3_outline_light">#FF6200EE</color>
+    
+    <!-- Material 3 Dark Theme Colors -->
+    <color name="md3_primary_dark">#FF6200EE</color>
+    <color name="md3_on_primary_dark">#FFFFFFFF</color>
+    <color name="md3_primary_container_dark">#FF3700B3</color>
+    <color name="md3_on_primary_container_dark">#FFBB86FC</color>
+    <color name="md3_secondary_dark">#FF03DAC5</color>
+    <color name="md3_on_secondary_dark">#FF000000</color>
+    <color name="md3_secondary_container_dark">#FF018786</color>
+    <color name="md3_on_secondary_container_dark">#FF03DAC5</color>
+    <color name="md3_tertiary_dark">#FF6200EE</color>
+    <color name="md3_on_tertiary_dark">#FFFFFFFF</color>
+    <color name="md3_tertiary_container_dark">#FF3700B3</color>
+    <color name="md3_on_tertiary_container_dark">#FFBB86FC</color>
+    <color name="md3_error_dark">#FFCF6679</color>
+    <color name="md3_on_error_dark">#FFFFFFFF</color>
+    <color name="md3_error_container_dark">#FFCF6679</color>
+    <color name="md3_on_error_container_dark">#FFFFFFFF</color>
+    <color name="md3_background_dark">#FF000000</color>
+    <color name="md3_on_background_dark">#FFFFFFFF</color>
+    <color name="md3_surface_dark">#FF000000</color>
+    <color name="md3_on_surface_dark">#FFFFFFFF</color>
+    <color name="md3_outline_dark">#FF6200EE</color>
 </resources>
